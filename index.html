@@ -1,0 +1,61 @@
+<html>
+  <head>
+    <title>Welcome to My Letter</title>
+    <style>
+      body {
+        text-align: center;
+      }
+      footer {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+      }      
+    </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+  <body>
+    <h1>Hoi..</h1>
+    <p>I'm so glad you could visit my letter! I have something special to share with you, and I hope you'll take a few minutes to read it.</p>
+    <div style="text-align:center">
+      <form onsubmit="openLetter(); return false;">
+        <label for="password">Enter access code:</label><br>
+        <input type="password" id="password" name="password"><br>
+      </form> 
+      <button onclick="openLetter()">Open My Letter</button>
+    </div>
+    <footer>
+      <label for="day-night-mode-toggle">Day/Night Mode</label>
+      <input type="checkbox" id="day-night-mode-toggle" onchange="toggleDayNightMode(this)">
+      <p>P.S: This is my first web page, very simple isn't it?</p>
+      <p><span style="text-decoration: underline;">Coded by Vega</span></p>
+    </footer>
+    <div style="text-align:center">  
+    <script>    
+function openLetter() {
+  // Get the entered password
+  var password = document.getElementById("password").value;
+  // Check if the password is correct
+  if (password == "araaraaja") {
+    // Open the letter if the password is correct
+    window.location = "https://vega-letter.static.app/awlndbueaobfdjakiodiieaobfeoancaj";
+  } else {
+    // Display an error message if the password is incorrect
+    alert("Anjay! Tapi salah wkwkwk, try again!.");
+  }
+}
+      function toggleDayNightMode(checkbox) {
+        if (checkbox.checked) {
+          // Switch to night mode
+          document.body.style.backgroundColor = "#222";
+          document.body.style.color = "#fff";
+        } else {
+          // Switch to day mode
+          document.body.style.backgroundColor = "#fff";
+          document.body.style.color = "#222";
+        }
+      }
+    </script>
+  <!-- Static App Form Collection Script -->
+<script src="https://static.app/js/static-forms.js" type="text/javascript"></script>
+</body>
+</html>
